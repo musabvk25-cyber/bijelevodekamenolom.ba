@@ -1,41 +1,150 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijele Vode Kamenolom</title>
-</head>
+    <style>
+        /* Osnovne postavke izgleda /
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
+        / Zaglavlje / Hero sekcija /
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://unsplash.com') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ffcc00; / Zlatno-žuta boja građevine /
+            margin: 0;
+            font-weight: bold;
+        }
+
+        / Glavni sadržaj /
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        / Proizvodi kartice /
+        .proizvodi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .proizvod-kartica {
+            background: #f4f6f7;
+            padding: 20px;
+            border-left: 5px solid #2c3e50;
+            border-radius: 4px;
+        }
+
+        .proizvod-kartica h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        / Kontakt i Footer */
+        .kontakt-info p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
 
+    <!-- GLAVNO ZAGLAVLJE -->
     <header>
         <h1>Bijele Vode Kamenolom</h1>
-        <p>Pouzdan partner u snabdijevanju kamenim agregatima.</p>
+        <p>Použdan partner u snabdijevanju kamenim agregatima</p>
     </header>
 
-    <main>
-        <h2>Dobro došli</h2>
-        <p>
-            Bijele Vode Kamenolom d.o.o. bavi se proizvodnjom i
-            snabdijevanjem kvalitetnim kamenim agregatima.
-        </p>
+    <div class="container">
+        
+        <!-- O NAMA -->
+        <section>
+            <h2>Dobro došli</h2>
+            <p>Bijele Vode Kamenolom d.o.o. bavi se proizvodnjom i snabdijevanjem kvalitetnim kamenim agregatima. Naš fokus je na osiguravanju vrhunskih materijala za sve vrste građevinskih projekata, niskogradnju i cestogradnju.</p>
+        </section>
 
-        <h2>Naši proizvodi</h2>
-        <p>
-            Nudimo kvalitetne agregate proizvedene prema potrebama
-            građevinske industrije.
-        </p>
+        <!-- PROIZVODI -->
+        <section>
+            <h2>Naši proizvodi</h2>
+            <p>Nudimo kvalitetne agregate proizvedene prema najvišim standardima građevinske industrije:</p>
+            
+            <div class="proizvodi-grid">
+                <div class="proizvod-kartica">
+                    <h3>Kameni agregati</h3>
+                    <p>Sve frakcije za proizvodnju betona i asfalta.</p>
+                </div>
+                <div class="proizvod-kartica">
+                    <h3>Lomljeni kamen</h3>
+                    <p>Idealan za podloge, nasipe i stabilizaciju terena.</p>
+                </div>
+                <div class="proizvod-kartica">
+                    <h3>Tamponski materijali</h3>
+                    <p>Visokokvalitetni materijali za izgradnju puteva.</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>Kontakt</h2>
-        <p>
-            Bijele Vode Kamenolom d.o.o.<br>
-            Kijevo, Trnovo<br>
-            Bosna i Hercegovina
-        </p>
-    </main>
+        <!-- KONTAKT -->
+        <section class="kontakt-info">
+            <h2>Kontaktirajte nas</h2>
+            <p><strong>📍 Adresa:</strong> Kijevo, Trnovo, Bosna i Hercegovina</p>
+            <p><strong>📞 Telefon:</strong> [Unesite vaš broj telefona]</p>
+            <p><strong>✉️ E-mail:</strong> [Unesite vašu e-mail adresu]</p>
+        </section>
 
+    </div>
+
+    <!-- PODNOŽJE -->
     <footer>
-        <p>© 2026 Bijele Vode Kamenolom d.o.o.</p>
+        <p>&copy; 2026 Bijele Vode Kamenolom d.o.o. Sva prava zadržana.</p>
     </footer>
 
 </body>
